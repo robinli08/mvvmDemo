@@ -1,0 +1,21 @@
+PODS:
+  - JSONModel (1.2.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - JSONModel (~> 1.2.0)
+  - ReactiveCocoa (= 2.5)
+
+SPEC CHECKSUMS:
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 91fcb2c57ab922e58b9214c3cb353e311dc3bd75
+
+COCOAPODS: 1.0.1
