@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DL_MVVM"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "MVVM For TableView"
   s.description      = <<-DESC
                        Testing Private Podspec.
