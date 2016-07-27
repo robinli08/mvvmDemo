@@ -19,6 +19,12 @@
 		65E84AB51D4611990070ED53 /* DLTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AB41D4611990070ED53 /* DLTableRow.m */; };
 		65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AB71D4611AE0070ED53 /* DLTableSection.m */; };
 		79AC9A2F0F2139DAAFD8211D /* libPods-DL_MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */; };
+		BC1F93701D48EA8600209286 /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F936F1D48EA8600209286 /* HomePageViewModel.m */; };
+		BC1F93721D48EE8200209286 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = BC1F93711D48EE8200209286 /* demo.js */; };
+		BC1F93751D48F0FE00209286 /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F93741D48F0FE00209286 /* BaseDataModel.m */; };
+		BC1F93781D48F26100209286 /* ModulesDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F93771D48F26100209286 /* ModulesDataModel.m */; };
+		BC1F937B1D48F34000209286 /* DataInModulsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F937A1D48F34000209286 /* DataInModulsDataModel.m */; };
+		BC1F937E1D48F3EB00209286 /* ProductDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1F937D1D48F3EB00209286 /* ProductDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,17 @@
 		65E84ABA1D4611DD0070ED53 /* DLTableSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTableSectionProtocol.h; sourceTree = "<group>"; };
 		7DF8FC236F546E2DC105D2B1 /* Pods-DL_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DL_MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1F936E1D48EA8600209286 /* HomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewModel.h; sourceTree = "<group>"; };
+		BC1F936F1D48EA8600209286 /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
+		BC1F93711D48EE8200209286 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		BC1F93731D48F0FE00209286 /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		BC1F93741D48F0FE00209286 /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
+		BC1F93761D48F26100209286 /* ModulesDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModulesDataModel.h; sourceTree = "<group>"; };
+		BC1F93771D48F26100209286 /* ModulesDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModulesDataModel.m; sourceTree = "<group>"; };
+		BC1F93791D48F34000209286 /* DataInModulsDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataInModulsDataModel.h; sourceTree = "<group>"; };
+		BC1F937A1D48F34000209286 /* DataInModulsDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataInModulsDataModel.m; sourceTree = "<group>"; };
+		BC1F937C1D48F3EB00209286 /* ProductDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDataModel.h; sourceTree = "<group>"; };
+		BC1F937D1D48F3EB00209286 /* ProductDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDataModel.m; sourceTree = "<group>"; };
 		EAE0D2BAEE08D3788471E1BB /* Pods-DL_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,11 +113,21 @@
 				653B843E1D45AFE700890D00 /* AppDelegate.m */,
 				653B84401D45AFE700890D00 /* ViewController.h */,
 				653B84411D45AFE700890D00 /* ViewController.m */,
+				BC1F936E1D48EA8600209286 /* HomePageViewModel.h */,
+				BC1F936F1D48EA8600209286 /* HomePageViewModel.m */,
 				653B84431D45AFE700890D00 /* Main.storyboard */,
 				653B84461D45AFE700890D00 /* Assets.xcassets */,
 				653B84481D45AFE700890D00 /* LaunchScreen.storyboard */,
 				653B844B1D45AFE700890D00 /* Info.plist */,
 				653B843A1D45AFE700890D00 /* Supporting Files */,
+				BC1F93731D48F0FE00209286 /* BaseDataModel.h */,
+				BC1F93741D48F0FE00209286 /* BaseDataModel.m */,
+				BC1F93761D48F26100209286 /* ModulesDataModel.h */,
+				BC1F93771D48F26100209286 /* ModulesDataModel.m */,
+				BC1F93791D48F34000209286 /* DataInModulsDataModel.h */,
+				BC1F937A1D48F34000209286 /* DataInModulsDataModel.m */,
+				BC1F937C1D48F3EB00209286 /* ProductDataModel.h */,
+				BC1F937D1D48F3EB00209286 /* ProductDataModel.m */,
 			);
 			path = DL_MVVM;
 			sourceTree = "<group>";
@@ -108,6 +135,7 @@
 		653B843A1D45AFE700890D00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC1F93711D48EE8200209286 /* demo.js */,
 				653B843B1D45AFE700890D00 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -227,6 +255,7 @@
 				653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */,
 				653B84471D45AFE700890D00 /* Assets.xcassets in Resources */,
 				653B84451D45AFE700890D00 /* Main.storyboard in Resources */,
+				BC1F93721D48EE8200209286 /* demo.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +314,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1F93701D48EA8600209286 /* HomePageViewModel.m in Sources */,
+				BC1F93781D48F26100209286 /* ModulesDataModel.m in Sources */,
 				65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */,
 				65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */,
 				65E84AB51D4611990070ED53 /* DLTableRow.m in Sources */,
 				653B84421D45AFE700890D00 /* ViewController.m in Sources */,
 				653B843F1D45AFE700890D00 /* AppDelegate.m in Sources */,
+				BC1F937E1D48F3EB00209286 /* ProductDataModel.m in Sources */,
+				BC1F93751D48F0FE00209286 /* BaseDataModel.m in Sources */,
 				65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */,
 				653B843C1D45AFE700890D00 /* main.m in Sources */,
+				BC1F937B1D48F34000209286 /* DataInModulsDataModel.m in Sources */,
 				65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
