@@ -15,6 +15,7 @@
 		653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84481D45AFE700890D00 /* LaunchScreen.storyboard */; };
 		655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */; };
 		65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */; };
+		65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */; };
 		65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */; };
 		65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AA21D45B5060070ED53 /* DLBaseViewModel.m */; };
 		65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AA51D45B52E0070ED53 /* DLBaseListViewModel.m */; };
@@ -44,6 +45,8 @@
 		655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableArray.m; sourceTree = "<group>"; };
 		65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
+		65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBackgroundTimer.m; sourceTree = "<group>"; };
+		65C3916D1D4B484700052E97 /* BKBackgroundTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKBackgroundTimer.h; sourceTree = "<group>"; };
 		65E84A9E1D45B4A80070ED53 /* DLBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseModel.h; sourceTree = "<group>"; };
 		65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBaseModel.m; sourceTree = "<group>"; };
 		65E84AA11D45B5060070ED53 /* DLBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseViewModel.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		655DE1D71D4AFEEC00E70915 /* DLUtils */ = {
 			isa = PBXGroup;
 			children = (
+				65C3916D1D4B484700052E97 /* BKBackgroundTimer.h */,
+				65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */,
 				655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */,
 				655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */,
 				65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */,
@@ -344,6 +349,7 @@
 				65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */,
 				653B843C1D45AFE700890D00 /* main.m in Sources */,
 				655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */,
+				65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */,
 				65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */,
 				BC1F937B1D48F34000209286 /* DataInModulsDataModel.m in Sources */,
 				65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */,
