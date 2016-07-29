@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D0069506FF7BB58DCDF5832C2B9A13E5'
-               BlueprintName = 'Pods-DL_MVVM'
+               BlueprintIdentifier = 'F9B627E6F3C608184C724A74ACE3BADC'
+               BlueprintName = 'Funcussion'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-DL_MVVM.a'>
+               BuildableName = 'libFuncussion.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

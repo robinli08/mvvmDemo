@@ -13,6 +13,8 @@
 		653B84451D45AFE700890D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84431D45AFE700890D00 /* Main.storyboard */; };
 		653B84471D45AFE700890D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653B84461D45AFE700890D00 /* Assets.xcassets */; };
 		653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84481D45AFE700890D00 /* LaunchScreen.storyboard */; };
+		655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */; };
+		65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */; };
 		65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */; };
 		65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AA21D45B5060070ED53 /* DLBaseViewModel.m */; };
 		65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AA51D45B52E0070ED53 /* DLBaseListViewModel.m */; };
@@ -38,6 +40,10 @@
 		653B84461D45AFE700890D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653B84491D45AFE700890D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		653B844B1D45AFE700890D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableArray.h; sourceTree = "<group>"; };
+		655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableArray.m; sourceTree = "<group>"; };
+		65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
+		65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		65E84A9E1D45B4A80070ED53 /* DLBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseModel.h; sourceTree = "<group>"; };
 		65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBaseModel.m; sourceTree = "<group>"; };
 		65E84AA11D45B5060070ED53 /* DLBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseViewModel.h; sourceTree = "<group>"; };
@@ -141,9 +147,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		655DE1D71D4AFEEC00E70915 /* DLUtils */ = {
+			isa = PBXGroup;
+			children = (
+				655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */,
+				655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */,
+				65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */,
+				65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */,
+			);
+			path = DLUtils;
+			sourceTree = "<group>";
+		};
 		65E84A9A1D45B3E80070ED53 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				655DE1D71D4AFEEC00E70915 /* DLUtils */,
 				65E84A9B1D45B4950070ED53 /* BaseModel */,
 				65E84A9C1D45B4950070ED53 /* BaseViewModel */,
 				65E84A9D1D45B4950070ED53 /* DLTableView */,
@@ -325,6 +343,8 @@
 				BC1F93751D48F0FE00209286 /* BaseDataModel.m in Sources */,
 				65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */,
 				653B843C1D45AFE700890D00 /* main.m in Sources */,
+				655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */,
+				65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */,
 				BC1F937B1D48F34000209286 /* DataInModulsDataModel.m in Sources */,
 				65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */,
 			);
