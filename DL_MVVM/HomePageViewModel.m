@@ -28,10 +28,11 @@
 
 - (RACSignal *)loadData {
     
-//    @weakify(self);
+    @weakify(self);
         _requestSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             
-//        @strongify(self);
+        @strongify(self);
+        //(fetch here JSON from Internet) ...
             NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
             NSData *data = [NSData dataWithContentsOfFile:path options:0 error: nil];
             
