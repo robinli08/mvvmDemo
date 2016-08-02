@@ -9,10 +9,15 @@
 #import "BaseDataModel.h"
 #import "DataInModulsDataModel.h"
 
+@protocol ModulesDataModel <NSObject>
+
+@end
+
+
 @interface ModulesDataModel : BaseDataModel
 
 @property (nonatomic, strong) NSString *mid;
 @property (nonatomic, strong) NSString *tid;
-@property (nonatomic, strong) NSArray<DataInModulsDataModel *> *data;
+@property (nonatomic, strong) DataInModulsDataModel *data;
 
 @end

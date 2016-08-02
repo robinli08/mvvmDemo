@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomePageViewModel.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) HomePageViewModel *viewModel;
 
 @end
 

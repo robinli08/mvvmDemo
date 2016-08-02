@@ -14,6 +14,9 @@
 		653B84471D45AFE700890D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653B84461D45AFE700890D00 /* Assets.xcassets */; };
 		653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84481D45AFE700890D00 /* LaunchScreen.storyboard */; };
 		655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */; };
+		65AFC1931D504B130084A286 /* HomepageRowViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC1921D504B130084A286 /* HomepageRowViewModel.m */; };
+		65AFC1971D5088910084A286 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AFC1951D5088910084A286 /* MainTableViewCell.m */; };
+		65AFC1981D5088910084A286 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65AFC1961D5088910084A286 /* MainTableViewCell.xib */; };
 		65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */; };
 		65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */; };
 		65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */; };
@@ -43,6 +46,11 @@
 		653B844B1D45AFE700890D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableArray.h; sourceTree = "<group>"; };
 		655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableArray.m; sourceTree = "<group>"; };
+		65AFC1911D504B130084A286 /* HomepageRowViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageRowViewModel.h; sourceTree = "<group>"; };
+		65AFC1921D504B130084A286 /* HomepageRowViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageRowViewModel.m; sourceTree = "<group>"; };
+		65AFC1941D5088910084A286 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		65AFC1951D5088910084A286 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		65AFC1961D5088910084A286 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBackgroundTimer.m; sourceTree = "<group>"; };
@@ -124,6 +132,8 @@
 				653B84411D45AFE700890D00 /* ViewController.m */,
 				BC1F936E1D48EA8600209286 /* HomePageViewModel.h */,
 				BC1F936F1D48EA8600209286 /* HomePageViewModel.m */,
+				65AFC1911D504B130084A286 /* HomepageRowViewModel.h */,
+				65AFC1921D504B130084A286 /* HomepageRowViewModel.m */,
 				653B84431D45AFE700890D00 /* Main.storyboard */,
 				653B84461D45AFE700890D00 /* Assets.xcassets */,
 				653B84481D45AFE700890D00 /* LaunchScreen.storyboard */,
@@ -137,6 +147,9 @@
 				BC1F937A1D48F34000209286 /* DataInModulsDataModel.m */,
 				BC1F937C1D48F3EB00209286 /* ProductDataModel.h */,
 				BC1F937D1D48F3EB00209286 /* ProductDataModel.m */,
+				65AFC1941D5088910084A286 /* MainTableViewCell.h */,
+				65AFC1951D5088910084A286 /* MainTableViewCell.m */,
+				65AFC1961D5088910084A286 /* MainTableViewCell.xib */,
 			);
 			path = DL_MVVM;
 			sourceTree = "<group>";
@@ -279,6 +292,7 @@
 				653B84471D45AFE700890D00 /* Assets.xcassets in Resources */,
 				653B84451D45AFE700890D00 /* Main.storyboard in Resources */,
 				BC1F93721D48EE8200209286 /* demo.js in Resources */,
+				65AFC1981D5088910084A286 /* MainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +363,8 @@
 				65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */,
 				653B843C1D45AFE700890D00 /* main.m in Sources */,
 				655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */,
+				65AFC1971D5088910084A286 /* MainTableViewCell.m in Sources */,
+				65AFC1931D504B130084A286 /* HomepageRowViewModel.m in Sources */,
 				65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */,
 				65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */,
 				BC1F937B1D48F34000209286 /* DataInModulsDataModel.m in Sources */,

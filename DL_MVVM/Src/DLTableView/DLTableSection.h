@@ -6,10 +6,10 @@
 //  Copyright © 2016 Daniel.Li. All rights reserved.
 //
 
-#import "DLBaseViewModel.h"
+#import "DLBaseListViewModel.h"
 #import "DLTableSectionProtocol.h"
 
-@interface DLTableSection : DLBaseViewModel
+@interface DLTableSection : DLBaseListViewModel
 
 @property (assign, nonatomic) NSUInteger index;
 @property (copy, readwrite, nonatomic) NSString *headerTitle;

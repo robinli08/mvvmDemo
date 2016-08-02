@@ -7,11 +7,11 @@
 //
 
 #import "BaseDataModel.h"
-#import "DataInModulsDataModel.h"
+#import "ModulesDataModel.h"
 
 @interface ProductDataModel : BaseDataModel
 
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSArray<DataInModulsDataModel*> *modules;
+@property (nonatomic, strong) NSArray<ModulesDataModel> *modules;
 
 @end

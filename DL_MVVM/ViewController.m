@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "ProductDataModel.h"
+#import "MainTableViewCell.h"
+#import "HomepageRowViewModel.h"
 
-@interface ViewController ()
+
+@interface ViewController () <UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end
 
@@ -19,15 +23,52 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
-    NSData *data = [NSData dataWithContentsOfFile:path options:0 error: nil];
+    [self setupTabelView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self bindViewModel];
+}
+
+- (void)setupTabelView {
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
     
-    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error: nil];
+    [self.mainTableView registerNib:[MainTableViewCell cellNib] forCellReuseIdentifier:[MainTableViewCell cellReuseIdentifier]];
+}
+
+- (void)bindViewModel {
     
-    ProductDataModel *dataModel = [[ProductDataModel alloc] initWithDictionary:dictionary error:nil];
+    self.viewModel = [[HomePageViewModel alloc] init];
     
-    NSLog (@"%@",dataModel.modules);
+    [[self.viewModel loadData] subscribeNext:^(id x) {
+        [self.mainTableView reloadData];
+    } error:^(NSError *error) {
+        
+    }];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.viewModel countOfViewModels];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 44.f;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MainTableViewCell cellReuseIdentifier]];
+    
+    HomepageRowViewModel *rowViewModel = [self.viewModel viewModelAtIndex:indexPath.row];
+    cell.textLabel.text = rowViewModel.title;
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
