@@ -26,9 +26,7 @@
 }
 
 + (UINib *)cellNib {
-    
     return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:[NSBundle bundleForClass:[self class]]];
-    
 }
 
 @end
