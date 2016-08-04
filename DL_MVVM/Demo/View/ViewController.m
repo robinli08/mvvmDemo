@@ -50,22 +50,26 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [self.viewModel countOfViewModels];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.viewModel countOfViewModels];
+    return [[self.viewModel viewModelAtIndex:section] countOfViewModels];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 44.f;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 15.f;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MainTableViewCell cellReuseIdentifier]];
     
-    HomepageRowViewModel *rowViewModel = [self.viewModel viewModelAtIndex:indexPath.row];
+    HomepageRowViewModel *rowViewModel = [[self.viewModel viewModelAtIndex:indexPath.section] viewModelAtIndex:indexPath.row];
     cell.textLabel.text = rowViewModel.title;
     
     return cell;

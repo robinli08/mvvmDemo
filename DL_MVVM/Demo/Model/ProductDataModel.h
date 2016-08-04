@@ -9,6 +9,11 @@
 #import "BaseDataModel.h"
 #import "ModulesDataModel.h"
 
+@protocol ProductDataModel <NSObject>
+
+
+@end
+
 @interface ProductDataModel : BaseDataModel
 
 @property (nonatomic, strong) NSString *title;
