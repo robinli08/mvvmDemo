@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MainTableViewCell.h"
 #import "HomepageRowViewModel.h"
+#import "SecondViewController.h"
 
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -73,6 +74,13 @@
     cell.textLabel.text = rowViewModel.title;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SecondViewController *vc = [[SecondViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

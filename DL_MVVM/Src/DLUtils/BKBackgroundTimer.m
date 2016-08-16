@@ -126,7 +126,6 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
         self.timerState = BKBackgroundTimerStateRunning;
     }
     OSSpinLockUnlock(&_lock);
-    
     return success;
 }
 

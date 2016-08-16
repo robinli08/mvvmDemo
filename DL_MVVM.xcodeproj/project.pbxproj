@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651237561D61F73E000A97F5 /* NSString+DL_StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 651237551D61F73E000A97F5 /* NSString+DL_StringUtil.m */; };
+		651237581D61F7F4000A97F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651237571D61F7F4000A97F5 /* CoreGraphics.framework */; };
+		6512375A1D61F919000A97F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651237591D61F919000A97F5 /* SystemConfiguration.framework */; };
+		6512375C1D61F930000A97F5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512375B1D61F930000A97F5 /* MobileCoreServices.framework */; };
+		6512375E1D61F9B7000A97F5 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6512375D1D61F9B7000A97F5 /* CoreFoundation.framework */; };
+		651237611D61FA77000A97F5 /* DLTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 651237601D61FA77000A97F5 /* DLTagView.m */; };
+		651237651D6202BF000A97F5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651237631D6202BF000A97F5 /* SecondViewController.m */; };
+		651237661D6202BF000A97F5 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651237641D6202BF000A97F5 /* SecondViewController.xib */; };
+		651237691D62149F000A97F5 /* UIView+HXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 651237681D62149F000A97F5 /* UIView+HXUtility.m */; };
+		651847861D62A1880035994F /* DLAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 651847851D62A1880035994F /* DLAlertHelper.m */; };
 		653B843C1D45AFE700890D00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 653B843B1D45AFE700890D00 /* main.m */; };
 		653B843F1D45AFE700890D00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 653B843E1D45AFE700890D00 /* AppDelegate.m */; };
 		653B84451D45AFE700890D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84431D45AFE700890D00 /* Main.storyboard */; };
@@ -38,6 +48,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651237541D61F73E000A97F5 /* NSString+DL_StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DL_StringUtil.h"; sourceTree = "<group>"; };
+		651237551D61F73E000A97F5 /* NSString+DL_StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DL_StringUtil.m"; sourceTree = "<group>"; };
+		651237571D61F7F4000A97F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		651237591D61F919000A97F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6512375B1D61F930000A97F5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6512375D1D61F9B7000A97F5 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6512375F1D61FA77000A97F5 /* DLTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTagView.h; sourceTree = "<group>"; };
+		651237601D61FA77000A97F5 /* DLTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTagView.m; sourceTree = "<group>"; };
+		651237621D6202BF000A97F5 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
+		651237631D6202BF000A97F5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
+		651237641D6202BF000A97F5 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../SecondViewController.xib; sourceTree = "<group>"; };
+		651237671D62149F000A97F5 /* UIView+HXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HXUtility.h"; sourceTree = "<group>"; };
+		651237681D62149F000A97F5 /* UIView+HXUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HXUtility.m"; sourceTree = "<group>"; };
+		651847841D62A1880035994F /* DLAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAlertHelper.h; sourceTree = "<group>"; };
+		651847851D62A1880035994F /* DLAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAlertHelper.m; sourceTree = "<group>"; };
 		653B84371D45AFE700890D00 /* DL_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DL_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		653B843B1D45AFE700890D00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		653B843D1D45AFE700890D00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +127,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6512375A1D61F919000A97F5 /* SystemConfiguration.framework in Frameworks */,
+				6512375E1D61F9B7000A97F5 /* CoreFoundation.framework in Frameworks */,
+				6512375C1D61F930000A97F5 /* MobileCoreServices.framework in Frameworks */,
+				651237581D61F7F4000A97F5 /* CoreGraphics.framework in Frameworks */,
 				79AC9A2F0F2139DAAFD8211D /* libPods-DL_MVVM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,12 +206,20 @@
 		655DE1D71D4AFEEC00E70915 /* DLUtils */ = {
 			isa = PBXGroup;
 			children = (
+				651847841D62A1880035994F /* DLAlertHelper.h */,
+				651847851D62A1880035994F /* DLAlertHelper.m */,
+				651237671D62149F000A97F5 /* UIView+HXUtility.h */,
+				651237681D62149F000A97F5 /* UIView+HXUtility.m */,
 				65C3916D1D4B484700052E97 /* BKBackgroundTimer.h */,
 				65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */,
 				655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */,
 				655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */,
 				65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */,
 				65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */,
+				651237541D61F73E000A97F5 /* NSString+DL_StringUtil.h */,
+				651237551D61F73E000A97F5 /* NSString+DL_StringUtil.m */,
+				6512375F1D61FA77000A97F5 /* DLTagView.h */,
+				651237601D61FA77000A97F5 /* DLTagView.m */,
 			);
 			path = DLUtils;
 			sourceTree = "<group>";
@@ -223,6 +260,9 @@
 				657E22FD1D533731003F0A40 /* MainTableViewCell.xib */,
 				657E22FE1D533731003F0A40 /* ViewController.h */,
 				657E22FF1D533731003F0A40 /* ViewController.m */,
+				651237621D6202BF000A97F5 /* SecondViewController.h */,
+				651237631D6202BF000A97F5 /* SecondViewController.m */,
+				651237641D6202BF000A97F5 /* SecondViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +335,10 @@
 		D955148E35E81BFEFC2236B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6512375D1D61F9B7000A97F5 /* CoreFoundation.framework */,
+				6512375B1D61F930000A97F5 /* MobileCoreServices.framework */,
+				651237591D61F919000A97F5 /* SystemConfiguration.framework */,
+				651237571D61F7F4000A97F5 /* CoreGraphics.framework */,
 				B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */,
 			);
 			name = Frameworks;
@@ -362,6 +406,7 @@
 			files = (
 				657E23181D533B55003F0A40 /* demo.js in Resources */,
 				653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */,
+				651237661D6202BF000A97F5 /* SecondViewController.xib in Resources */,
 				653B84471D45AFE700890D00 /* Assets.xcassets in Resources */,
 				653B84451D45AFE700890D00 /* Main.storyboard in Resources */,
 				657E230A1D533731003F0A40 /* MainTableViewCell.xib in Resources */,
@@ -423,22 +468,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651237651D6202BF000A97F5 /* SecondViewController.m in Sources */,
 				657E230B1D533731003F0A40 /* ViewController.m in Sources */,
 				65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */,
 				65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */,
 				657E23071D533731003F0A40 /* ModulesDataModel.m in Sources */,
 				65E84AB51D4611990070ED53 /* DLTableRow.m in Sources */,
+				651237561D61F73E000A97F5 /* NSString+DL_StringUtil.m in Sources */,
 				653FD26B1D519A3A004DD831 /* DLCollectionSection.m in Sources */,
 				653B843F1D45AFE700890D00 /* AppDelegate.m in Sources */,
 				65E84AA31D45B5060070ED53 /* DLBaseViewModel.m in Sources */,
 				653B843C1D45AFE700890D00 /* main.m in Sources */,
+				651237691D62149F000A97F5 /* UIView+HXUtility.m in Sources */,
 				653FD2661D51976B004DD831 /* DLCollectionItem.m in Sources */,
 				657E23081D533731003F0A40 /* ProductDataModel.m in Sources */,
 				657E230C1D533731003F0A40 /* HomepageRowViewModel.m in Sources */,
+				651237611D61FA77000A97F5 /* DLTagView.m in Sources */,
 				657E23091D533731003F0A40 /* MainTableViewCell.m in Sources */,
 				657E23111D533874003F0A40 /* ListDataModel.m in Sources */,
 				655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */,
 				65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */,
+				651847861D62A1880035994F /* DLAlertHelper.m in Sources */,
 				657E23051D533731003F0A40 /* BaseDataModel.m in Sources */,
 				657E230D1D533731003F0A40 /* HomePageViewModel.m in Sources */,
 				657E23141D53396C003F0A40 /* HomePageSectionViewModel.m in Sources */,
@@ -560,6 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DL_MVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Daniel.DL-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DL_MVVM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Daniel.DL-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
