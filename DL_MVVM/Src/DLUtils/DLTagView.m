@@ -57,12 +57,13 @@
     self.backgroundColor = [UIColor clearColor];
     self.textFont = [UIFont systemFontOfSize:16.f];
     self.textColor = [UIColor blackColor];
-    self.textAlignment = NSTextAlignmentLeft;
     
     self.textLabel = [[UILabel alloc] init];
-    
+    self.textLabel.textAlignment = NSTextAlignmentCenter;
     self.textLabel.numberOfLines = 1;
     [self addSubview:self.textLabel];
+    self.layer.borderWidth = 0.5;
+    self.layer.cornerRadius = 2;
 }
 
 - (void)setText:(NSString *)text {
@@ -72,7 +73,13 @@
     self.textLabel.font = self.textFont;
     CGSize textSize = [text dl_sizeWithFont:self.textLabel.font];
     self.textLabel.frame = CGRectMake(self.edgeInsets.left, self.edgeInsets.top, textSize.width, textSize.height);
-    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, textSize.width + 2* self.edgeInsets.left, textSize.height + 2 * self.edgeInsets.top);
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, textSize.width + self.edgeInsets.right + self.edgeInsets.left, textSize.height + self.edgeInsets.bottom + self.edgeInsets.top);
+}
+
+- (void)setBoardColor:(UIColor *)boardColor {
+    
+    self.layer.borderColor = self.borderColor.CGColor;
+    
 }
 
 @end

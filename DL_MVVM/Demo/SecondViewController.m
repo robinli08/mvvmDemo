@@ -38,9 +38,9 @@
     tagLable.textColor = [UIColor redColor];
     
     tagLable.textFont = [UIFont systemFontOfSize:16.f];
-    tagLable.edgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    tagLable.edgeInsets = UIEdgeInsetsMake(5, 5, 5, 20);
     
-    tagLable.layer.borderWidth = 0.5f;
+//    tagLable.layer.borderWidth = 0.5f;
     tagLable.layer.borderColor = [UIColor blueColor].CGColor;
     
     tagLable.text = str;
@@ -53,15 +53,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
