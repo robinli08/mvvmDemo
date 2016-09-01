@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"           #截图
   s.license          = 'MIT'              
   s.author           = { "robinli08" => "ielibo08@gmail.com" }                   
-  s.source           = { :git => "https://github.com/robinli08/mvvmDemo.git", :tag => "0.2.1" }
+  s.source           = { :git => "https://github.com/robinli08/mvvmDemo.git", :tag => "0.3.1" }
  
   s.platform     = :ios, '7.0'
   s.requires_arc = true 

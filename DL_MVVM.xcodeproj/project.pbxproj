@@ -40,8 +40,6 @@
 		657E23181D533B55003F0A40 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 657E23171D533B55003F0A40 /* demo.js */; };
 		65A0C26F1D770E5000819AC9 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C26E1D770E5000819AC9 /* NSArray+Safe.m */; };
 		65A0C2721D770E6600819AC9 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C2711D770E6600819AC9 /* NSDictionary+Safe.m */; };
-		65A0C2971D780DF900819AC9 /* DLCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C2961D780DF900819AC9 /* DLCollectionItem.m */; };
-		65A0C29B1D780E4F00819AC9 /* DLCollectionViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C29A1D780E4F00819AC9 /* DLCollectionViewSection.m */; };
 		65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */; };
 		65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */; };
 		65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */; };
@@ -112,12 +110,6 @@
 		65A0C26E1D770E5000819AC9 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		65A0C2701D770E6600819AC9 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
 		65A0C2711D770E6600819AC9 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
-		65A0C2951D780DF900819AC9 /* DLCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCollectionItem.h; sourceTree = "<group>"; };
-		65A0C2961D780DF900819AC9 /* DLCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCollectionItem.m; sourceTree = "<group>"; };
-		65A0C2981D780E2200819AC9 /* DLCollectionItemProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionItemProtocol.h; sourceTree = "<group>"; };
-		65A0C2991D780E4F00819AC9 /* DLCollectionViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCollectionViewSection.h; sourceTree = "<group>"; };
-		65A0C29A1D780E4F00819AC9 /* DLCollectionViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCollectionViewSection.m; sourceTree = "<group>"; };
-		65A0C29C1D780E6900819AC9 /* DLCollectionViewSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionViewSectionProtocol.h; sourceTree = "<group>"; };
 		65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBackgroundTimer.m; sourceTree = "<group>"; };
@@ -310,23 +302,9 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		65A0C2941D780DAC00819AC9 /* DLCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				65A0C2951D780DF900819AC9 /* DLCollectionItem.h */,
-				65A0C2961D780DF900819AC9 /* DLCollectionItem.m */,
-				65A0C2981D780E2200819AC9 /* DLCollectionItemProtocol.h */,
-				65A0C2991D780E4F00819AC9 /* DLCollectionViewSection.h */,
-				65A0C29A1D780E4F00819AC9 /* DLCollectionViewSection.m */,
-				65A0C29C1D780E6900819AC9 /* DLCollectionViewSectionProtocol.h */,
-			);
-			path = DLCollectionView;
-			sourceTree = "<group>";
-		};
 		65E84A9A1D45B3E80070ED53 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				65A0C2941D780DAC00819AC9 /* DLCollectionView */,
 				653FD2631D51973C004DD831 /* Collection */,
 				655DE1D71D4AFEEC00E70915 /* DLUtils */,
 				65E84A9B1D45B4950070ED53 /* BaseModel */,
@@ -505,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A0C29B1D780E4F00819AC9 /* DLCollectionViewSection.m in Sources */,
 				651237651D6202BF000A97F5 /* SecondViewController.m in Sources */,
 				657E230B1D533731003F0A40 /* ViewController.m in Sources */,
 				65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */,
@@ -520,7 +497,6 @@
 				651237691D62149F000A97F5 /* UIView+HXUtility.m in Sources */,
 				653FD2661D51976B004DD831 /* DLCollectionItem.m in Sources */,
 				657E23081D533731003F0A40 /* ProductDataModel.m in Sources */,
-				65A0C2971D780DF900819AC9 /* DLCollectionItem.m in Sources */,
 				657E230C1D533731003F0A40 /* HomepageRowViewModel.m in Sources */,
 				651237611D61FA77000A97F5 /* DLTagView.m in Sources */,
 				657E23091D533731003F0A40 /* MainTableViewCell.m in Sources */,

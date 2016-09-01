@@ -7,9 +7,9 @@
 //
 
 #import "DLBaseListViewModel.h"
-#import "DLCollectionItemProtocol.h"
+#import "DLCollectionSectionProtocol.h"
 
-@interface DLCollectionSection : DLBaseListViewModel <DLCollectionItemProtocol>
+@interface DLCollectionSection : DLBaseListViewModel <DLCollectionSectionProtocol>
 
 /**
  Section index in UICollectionView.
