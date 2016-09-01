@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "DL_MVVM"
-  s.version          = "0.2.1"
-  s.summary          = "MVVM For TableView"
+  s.version          = "0.3.0"
+  s.summary          = "MVVM For TableView&&Collection"
   s.description      = <<-DESC
                        Testing Private Podspec.
  
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true 
  
   s.source_files = 'DL_MVVM/Src/**/*.{h,m}'
-  s.frameworks = 'UIKit','Foundation'
+  s.frameworks = 'UIKit','Foundation','CoreGraphics'
 
   s.dependency 'JSONModel', '~> 1.2.0'
   s.dependency 'ReactiveCocoa', '2.5'
