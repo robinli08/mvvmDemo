@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DL_MVVM"
-  s.version          = "0.3.0"
+  s.version          = "0.3.3"
   s.summary          = "MVVM For TableView&&Collection"
   s.description      = <<-DESC
                        Testing Private Podspec.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"           #截图
   s.license          = 'MIT'              
   s.author           = { "robinli08" => "ielibo08@gmail.com" }                   
-  s.source           = { :git => "https://github.com/robinli08/mvvmDemo.git", :tag => "0.3.1" }
+  s.source           = { :git => "https://github.com/robinli08/mvvmDemo.git", :tag => "0.3.3" }
  
   s.platform     = :ios, '7.0'
   s.requires_arc = true 
@@ -22,4 +22,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'JSONModel', '~> 1.2.0'
   s.dependency 'ReactiveCocoa', '2.5'
+  s.dependency 'CAAnimationBlocks', '~> 0.0.1'
 end
