@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5B489F8C16A6521689E2757C37E61407'
-               BlueprintName = 'Pods-DL_MVVM'
+               BlueprintIdentifier = 'FDC4981285617666BFB83C856ED23F94'
+               BlueprintName = 'CAAnimationBlocks'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-DL_MVVM.a'>
+               BuildableName = 'libCAAnimationBlocks.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

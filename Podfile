@@ -9,4 +9,5 @@ target 'DL_MVVM' do
 	pod 'ReactiveCocoa', '2.5'
 	pod 'Funcussion', '~> 0.1.1'
 	pod 'AFNetworking', '2.6.3'
+	pod 'CAAnimationBlocks', '~> 0.0.1'
 end

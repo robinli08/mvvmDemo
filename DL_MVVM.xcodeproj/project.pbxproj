@@ -24,6 +24,7 @@
 		653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653B84481D45AFE700890D00 /* LaunchScreen.storyboard */; };
 		653FD2661D51976B004DD831 /* DLCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FD2651D51976B004DD831 /* DLCollectionItem.m */; };
 		653FD26B1D519A3A004DD831 /* DLCollectionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FD26A1D519A3A004DD831 /* DLCollectionSection.m */; };
+		655CA5E31D6C3A6A0085EC36 /* DLAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 655CA5E21D6C3A6A0085EC36 /* DLAutoScrollLabel.m */; };
 		655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */; };
 		657E23051D533731003F0A40 /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E22F31D533731003F0A40 /* BaseDataModel.m */; };
 		657E23061D533731003F0A40 /* DataInModulsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E22F51D533731003F0A40 /* DataInModulsDataModel.m */; };
@@ -37,6 +38,8 @@
 		657E23111D533874003F0A40 /* ListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E23101D533874003F0A40 /* ListDataModel.m */; };
 		657E23141D53396C003F0A40 /* HomePageSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657E23131D53396C003F0A40 /* HomePageSectionViewModel.m */; };
 		657E23181D533B55003F0A40 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 657E23171D533B55003F0A40 /* demo.js */; };
+		65A0C26F1D770E5000819AC9 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C26E1D770E5000819AC9 /* NSArray+Safe.m */; };
+		65A0C2721D770E6600819AC9 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A0C2711D770E6600819AC9 /* NSDictionary+Safe.m */; };
 		65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */; };
 		65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */; };
 		65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84A9F1D45B4A80070ED53 /* DLBaseModel.m */; };
@@ -77,6 +80,8 @@
 		653FD2681D519988004DD831 /* DLCollectionSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLCollectionSectionProtocol.h; sourceTree = "<group>"; };
 		653FD2691D519A3A004DD831 /* DLCollectionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCollectionSection.h; sourceTree = "<group>"; };
 		653FD26A1D519A3A004DD831 /* DLCollectionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCollectionSection.m; sourceTree = "<group>"; };
+		655CA5E11D6C3A6A0085EC36 /* DLAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLAutoScrollLabel.h; sourceTree = "<group>"; };
+		655CA5E21D6C3A6A0085EC36 /* DLAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLAutoScrollLabel.m; sourceTree = "<group>"; };
 		655DE1D81D4AFF3500E70915 /* DL_ThreadSafeMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableArray.h; sourceTree = "<group>"; };
 		655DE1D91D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableArray.m; sourceTree = "<group>"; };
 		657E22F21D533731003F0A40 /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
@@ -101,6 +106,10 @@
 		657E23121D53396C003F0A40 /* HomePageSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageSectionViewModel.h; sourceTree = "<group>"; };
 		657E23131D53396C003F0A40 /* HomePageSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageSectionViewModel.m; sourceTree = "<group>"; };
 		657E23171D533B55003F0A40 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		65A0C26D1D770E5000819AC9 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		65A0C26E1D770E5000819AC9 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		65A0C2701D770E6600819AC9 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		65A0C2711D770E6600819AC9 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
 		65C391631D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DL_ThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		65C391641D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DL_ThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		65C3916C1D4B484700052E97 /* BKBackgroundTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKBackgroundTimer.m; sourceTree = "<group>"; };
@@ -220,6 +229,12 @@
 				651237551D61F73E000A97F5 /* NSString+DL_StringUtil.m */,
 				6512375F1D61FA77000A97F5 /* DLTagView.h */,
 				651237601D61FA77000A97F5 /* DLTagView.m */,
+				655CA5E11D6C3A6A0085EC36 /* DLAutoScrollLabel.h */,
+				655CA5E21D6C3A6A0085EC36 /* DLAutoScrollLabel.m */,
+				65A0C26D1D770E5000819AC9 /* NSArray+Safe.h */,
+				65A0C26E1D770E5000819AC9 /* NSArray+Safe.m */,
+				65A0C2701D770E6600819AC9 /* NSDictionary+Safe.h */,
+				65A0C2711D770E6600819AC9 /* NSDictionary+Safe.m */,
 			);
 			path = DLUtils;
 			sourceTree = "<group>";
@@ -490,7 +505,10 @@
 				65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */,
 				651847861D62A1880035994F /* DLAlertHelper.m in Sources */,
 				657E23051D533731003F0A40 /* BaseDataModel.m in Sources */,
+				655CA5E31D6C3A6A0085EC36 /* DLAutoScrollLabel.m in Sources */,
+				65A0C2721D770E6600819AC9 /* NSDictionary+Safe.m in Sources */,
 				657E230D1D533731003F0A40 /* HomePageViewModel.m in Sources */,
+				65A0C26F1D770E5000819AC9 /* NSArray+Safe.m in Sources */,
 				657E23141D53396C003F0A40 /* HomePageSectionViewModel.m in Sources */,
 				65C391651D4B23B700052E97 /* DL_ThreadSafeMutableDictionary.m in Sources */,
 				657E23061D533731003F0A40 /* DataInModulsDataModel.m in Sources */,

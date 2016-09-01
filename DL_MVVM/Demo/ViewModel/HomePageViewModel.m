@@ -61,6 +61,7 @@
                     return rowViewModel;
                 }];
                 
+                
                 [sectionViewModel addViewModelsFromArray:rowViewModelArray ];
                 return sectionViewModel;
                 
@@ -73,6 +74,7 @@
 //                rowViewModel.detailLabelText = obj.tid;
 //                return rowViewModel;
 //            }];
+            
             
             [self addViewModelsFromArray:sectionViewModelArray];
             
