@@ -29,8 +29,8 @@ typedef void (^HighlightedDidChangeBlock)(void);
 
 @property (nonatomic) CGFloat scrollSpeed;
 @property (nonatomic) NSTimeInterval pauseInterval;
-@property (nonatomic) NSInteger labelSpcing;
-@property (nonatomic) CGFloat fadeLenth;
+@property (nonatomic) NSInteger labelSpacing;
+@property (nonatomic) CGFloat fadeLength;
 @property (nonatomic, readonly) BOOL scrolling;
 @property (nonatomic) BOOL scrollEnabled;// default is YES
 

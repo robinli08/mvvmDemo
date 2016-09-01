@@ -9,9 +9,12 @@
 #import "SecondViewController.h"
 #import "NSString+DL_StringUtil.h"
 #import "DLTagView.h"
+#import "DLAutoScrollLabel.h"
+
 
 @interface SecondViewController ()
 
+@property (weak, nonatomic) IBOutlet DLAutoScrollLabel *scrollLabelView;
 @end
 
 @implementation SecondViewController
@@ -19,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *str = @"我是label ，我是label";
+    NSString *str = @"我是label1234567890";
     
 //    CGSize size = [str dl_sizeWithFont:[UIFont systemFontOfSize:12.f]];
     CGSize textSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}];
@@ -46,6 +49,17 @@
     tagLable.text = str;
     
     [self.view addSubview:tagLable];
+    
+    DLAutoScrollLabel *scrollLabel = [[DLAutoScrollLabel alloc] initWithFrame:CGRectMake(100, 400, 70, 40)];
+    
+    scrollLabel.text = str;
+    
+    NSLog(@"%@",scrollLabel.text);
+    
+    self.scrollLabelView.text = str;
+    
+    [self.view addSubview:self.scrollLabelView];
+    [self.view addSubview:scrollLabel];
     
 }
 
