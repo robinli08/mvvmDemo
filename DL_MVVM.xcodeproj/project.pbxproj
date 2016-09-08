@@ -47,6 +47,12 @@
 		65E84AA61D45B52E0070ED53 /* DLBaseListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AA51D45B52E0070ED53 /* DLBaseListViewModel.m */; };
 		65E84AB51D4611990070ED53 /* DLTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AB41D4611990070ED53 /* DLTableRow.m */; };
 		65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E84AB71D4611AE0070ED53 /* DLTableSection.m */; };
+		65F4EE9A1D7FE07D00B32324 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4EE981D7FE07D00B32324 /* ThirdViewController.m */; };
+		65F4EE9B1D7FE07D00B32324 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4EE991D7FE07D00B32324 /* ThirdViewController.xib */; };
+		65F4EEA11D800B3A00B32324 /* DLBlurBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4EEA01D800B3A00B32324 /* DLBlurBackgroundView.m */; };
+		65F4EEA41D80181D00B32324 /* UIViewController+Popup.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4EEA31D80181D00B32324 /* UIViewController+Popup.m */; };
+		65F4EEA81D80204500B32324 /* FouthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4EEA61D80204500B32324 /* FouthViewController.m */; };
+		65F4EEA91D80204500B32324 /* FouthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F4EEA71D80204500B32324 /* FouthViewController.xib */; };
 		79AC9A2F0F2139DAAFD8211D /* libPods-DL_MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +132,16 @@
 		65E84AB71D4611AE0070ED53 /* DLTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTableSection.m; sourceTree = "<group>"; };
 		65E84AB91D4611C90070ED53 /* DLTableRowProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTableRowProtocol.h; sourceTree = "<group>"; };
 		65E84ABA1D4611DD0070ED53 /* DLTableSectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTableSectionProtocol.h; sourceTree = "<group>"; };
+		65F4EE971D7FE07D00B32324 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		65F4EE981D7FE07D00B32324 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		65F4EE991D7FE07D00B32324 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		65F4EE9F1D800B3A00B32324 /* DLBlurBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBlurBackgroundView.h; sourceTree = "<group>"; };
+		65F4EEA01D800B3A00B32324 /* DLBlurBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBlurBackgroundView.m; sourceTree = "<group>"; };
+		65F4EEA21D80181D00B32324 /* UIViewController+Popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Popup.h"; sourceTree = "<group>"; };
+		65F4EEA31D80181D00B32324 /* UIViewController+Popup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Popup.m"; sourceTree = "<group>"; };
+		65F4EEA51D80204500B32324 /* FouthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FouthViewController.h; sourceTree = "<group>"; };
+		65F4EEA61D80204500B32324 /* FouthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FouthViewController.m; sourceTree = "<group>"; };
+		65F4EEA71D80204500B32324 /* FouthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FouthViewController.xib; sourceTree = "<group>"; };
 		7DF8FC236F546E2DC105D2B1 /* Pods-DL_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DL_MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE0D2BAEE08D3788471E1BB /* Pods-DL_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -278,6 +294,16 @@
 				651237621D6202BF000A97F5 /* SecondViewController.h */,
 				651237631D6202BF000A97F5 /* SecondViewController.m */,
 				651237641D6202BF000A97F5 /* SecondViewController.xib */,
+				65F4EE971D7FE07D00B32324 /* ThirdViewController.h */,
+				65F4EE981D7FE07D00B32324 /* ThirdViewController.m */,
+				65F4EE991D7FE07D00B32324 /* ThirdViewController.xib */,
+				65F4EE9F1D800B3A00B32324 /* DLBlurBackgroundView.h */,
+				65F4EEA01D800B3A00B32324 /* DLBlurBackgroundView.m */,
+				65F4EEA21D80181D00B32324 /* UIViewController+Popup.h */,
+				65F4EEA31D80181D00B32324 /* UIViewController+Popup.m */,
+				65F4EEA51D80204500B32324 /* FouthViewController.h */,
+				65F4EEA61D80204500B32324 /* FouthViewController.m */,
+				65F4EEA71D80204500B32324 /* FouthViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,10 +445,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F4EE9B1D7FE07D00B32324 /* ThirdViewController.xib in Resources */,
 				657E23181D533B55003F0A40 /* demo.js in Resources */,
 				653B844A1D45AFE700890D00 /* LaunchScreen.storyboard in Resources */,
 				651237661D6202BF000A97F5 /* SecondViewController.xib in Resources */,
 				653B84471D45AFE700890D00 /* Assets.xcassets in Resources */,
+				65F4EEA91D80204500B32324 /* FouthViewController.xib in Resources */,
 				653B84451D45AFE700890D00 /* Main.storyboard in Resources */,
 				657E230A1D533731003F0A40 /* MainTableViewCell.xib in Resources */,
 			);
@@ -486,6 +514,7 @@
 				651237651D6202BF000A97F5 /* SecondViewController.m in Sources */,
 				657E230B1D533731003F0A40 /* ViewController.m in Sources */,
 				65E84AB81D4611AE0070ED53 /* DLTableSection.m in Sources */,
+				65F4EEA81D80204500B32324 /* FouthViewController.m in Sources */,
 				65E84AA01D45B4A80070ED53 /* DLBaseModel.m in Sources */,
 				657E23071D533731003F0A40 /* ModulesDataModel.m in Sources */,
 				65E84AB51D4611990070ED53 /* DLTableRow.m in Sources */,
@@ -500,12 +529,15 @@
 				657E230C1D533731003F0A40 /* HomepageRowViewModel.m in Sources */,
 				651237611D61FA77000A97F5 /* DLTagView.m in Sources */,
 				657E23091D533731003F0A40 /* MainTableViewCell.m in Sources */,
+				65F4EEA11D800B3A00B32324 /* DLBlurBackgroundView.m in Sources */,
 				657E23111D533874003F0A40 /* ListDataModel.m in Sources */,
 				655DE1DA1D4AFF3500E70915 /* DL_ThreadSafeMutableArray.m in Sources */,
 				65C3916E1D4B484700052E97 /* BKBackgroundTimer.m in Sources */,
+				65F4EEA41D80181D00B32324 /* UIViewController+Popup.m in Sources */,
 				651847861D62A1880035994F /* DLAlertHelper.m in Sources */,
 				657E23051D533731003F0A40 /* BaseDataModel.m in Sources */,
 				655CA5E31D6C3A6A0085EC36 /* DLAutoScrollLabel.m in Sources */,
+				65F4EE9A1D7FE07D00B32324 /* ThirdViewController.m in Sources */,
 				65A0C2721D770E6600819AC9 /* NSDictionary+Safe.m in Sources */,
 				657E230D1D533731003F0A40 /* HomePageViewModel.m in Sources */,
 				65A0C26F1D770E5000819AC9 /* NSArray+Safe.m in Sources */,

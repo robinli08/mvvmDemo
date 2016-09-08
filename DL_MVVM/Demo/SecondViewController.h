@@ -10,4 +10,5 @@
 
 @interface SecondViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *popButton;
 @end

@@ -10,6 +10,8 @@
 #import "NSString+DL_StringUtil.h"
 #import "DLTagView.h"
 #import "DLAutoScrollLabel.h"
+#import "ThirdViewController.h"
+#import "UIViewController+Popup.h"
 
 
 @interface SecondViewController ()
@@ -50,16 +52,33 @@
     
     [self.view addSubview:tagLable];
     
-    DLAutoScrollLabel *scrollLabel = [[DLAutoScrollLabel alloc] initWithFrame:CGRectMake(100, 400, 70, 40)];
+    DLAutoScrollLabel *scrollLabel = [[DLAutoScrollLabel alloc] initWithFrame:CGRectMake(100, 400, 115, 40)];
     
     scrollLabel.text = str;
     
     NSLog(@"%@",scrollLabel.text);
-    
+
     self.scrollLabelView.text = str;
     
+
     [self.view addSubview:self.scrollLabelView];
     [self.view addSubview:scrollLabel];
+    
+}
+
+- (IBAction)popButtonAction:(id)sender {
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+    
+    nav.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
+    
+    [self presentPopupViewController:nav
+                            animated:YES
+                     useBlurForPopup:YES
+                        popDirection:DLPopupDirectionBottomToTop
+                          completion:^{
+                              
+                          }];
     
 }
 
