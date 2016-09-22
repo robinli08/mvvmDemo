@@ -77,11 +77,9 @@
             
             
             [self addViewModelsFromArray:sectionViewModelArray];
+        
             
-            [subscriber sendNext:listDataModel];
             [subscriber sendCompleted];
-            
-            
              return [RACDisposable disposableWithBlock:^{
                 
             }];

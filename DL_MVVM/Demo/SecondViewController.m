@@ -60,19 +60,29 @@
 
     self.scrollLabelView.text = str;
     
-
+    UITapGestureRecognizer *tapReg = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture)];
+    [self.view addGestureRecognizer:tapReg];
+    
     [self.view addSubview:self.scrollLabelView];
     [self.view addSubview:scrollLabel];
     
 }
 
+- (void)tapGesture {
+    
+}
+
 - (IBAction)popButtonAction:(id)sender {
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
+//    
+//    nav.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
     
-    nav.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
+    UIViewController *vc = [UIViewController new];
     
-    [self presentPopupViewController:nav
+    vc.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
+    
+    [self presentPopupViewController:vc
                             animated:YES
                      useBlurForPopup:YES
                         popDirection:DLPopupDirectionBottomToTop
