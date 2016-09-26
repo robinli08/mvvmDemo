@@ -23,6 +23,7 @@ PODS:
   - CAAnimationBlocks (0.0.1)
   - Funcussion (0.1.1)
   - JSONModel (1.2.0)
+  - Objection (1.6.1)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - CAAnimationBlocks (~> 0.0.1)
   - Funcussion (~> 0.1.1)
   - JSONModel (~> 1.2.0)
+  - Objection (~> 1.6.1)
   - ReactiveCocoa (= 2.5)
 
 SPEC CHECKSUMS:
@@ -43,8 +45,9 @@ SPEC CHECKSUMS:
   CAAnimationBlocks: 1aaca5fb6447a95d83b20cc786992956ef46e4ee
   Funcussion: 76d4065e09324d81d8db5b7e23d4639dfeec4399
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  Objection: ed03f2219cb22d2b5b893114219fe6c7e3263bde
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: 19365ec3de7e80a9510949a137e726bef16410ab
+PODFILE CHECKSUM: 6c9d799fe8441093d27964a34e80d725957356b4
 
 COCOAPODS: 1.0.1

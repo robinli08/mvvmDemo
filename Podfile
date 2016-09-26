@@ -6,6 +6,7 @@ target 'DL_MVVM' do
 
   # Pods for DL_MVVM
 	pod 'JSONModel', '~> 1.2.0'
+	pod 'Objection', '~> 1.6.1'
 	pod 'ReactiveCocoa', '2.5'
 	pod 'Funcussion', '~> 0.1.1'
 	pod 'AFNetworking', '2.6.3'

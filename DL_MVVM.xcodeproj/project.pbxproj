@@ -142,6 +142,7 @@
 		65F4EEA51D80204500B32324 /* FouthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FouthViewController.h; sourceTree = "<group>"; };
 		65F4EEA61D80204500B32324 /* FouthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FouthViewController.m; sourceTree = "<group>"; };
 		65F4EEA71D80204500B32324 /* FouthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FouthViewController.xib; sourceTree = "<group>"; };
+		65F9087E1D93DC0E00D9D335 /* DLAPIRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAPIRequestProtocol.h; sourceTree = "<group>"; };
 		7DF8FC236F546E2DC105D2B1 /* Pods-DL_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B9F78121A1C6E73713A91B64 /* libPods-DL_MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DL_MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE0D2BAEE08D3788471E1BB /* Pods-DL_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DL_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-DL_MVVM/Pods-DL_MVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				657E23171D533B55003F0A40 /* demo.js */,
+				65F9087D1D93DBA300D9D335 /* Network */,
 				657E22F01D533731003F0A40 /* Demo */,
 				65E84A9A1D45B3E80070ED53 /* Src */,
 				653B843D1D45AFE700890D00 /* AppDelegate.h */,
@@ -371,6 +373,14 @@
 				65E84ABA1D4611DD0070ED53 /* DLTableSectionProtocol.h */,
 			);
 			path = DLTableView;
+			sourceTree = "<group>";
+		};
+		65F9087D1D93DBA300D9D335 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				65F9087E1D93DC0E00D9D335 /* DLAPIRequestProtocol.h */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D955148E35E81BFEFC2236B9 /* Frameworks */ = {

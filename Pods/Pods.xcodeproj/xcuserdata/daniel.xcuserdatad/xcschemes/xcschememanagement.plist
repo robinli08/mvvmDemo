@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Objection.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DL_MVVM.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>098B40CA4DF8423DC9235C9EAD29A73A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>09FA060F1A0492FB25232F489AC4E573</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3E3528ED920DE748276C45EB40EADC94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B489F8C16A6521689E2757C37E61407</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E265CFF88A203C662C594296F0B05805</key>
+		<key>580A20D406CB044BF63B44D0DF725AD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
