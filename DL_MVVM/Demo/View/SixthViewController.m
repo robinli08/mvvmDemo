@@ -1,32 +1,22 @@
 //
-//  FouthViewController.m
+//  SixthViewController.m
 //  DL_MVVM
 //
-//  Created by Daniel.Li on 9/7/16.
+//  Created by Daniel.Li on 26/10/2016.
 //  Copyright © 2016 Daniel.Li. All rights reserved.
 //
 
-#import "FouthViewController.h"
+#import "SixthViewController.h"
 
-@interface FouthViewController ()
+@interface SixthViewController ()
 
 @end
 
-@implementation FouthViewController
+@implementation SixthViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning {

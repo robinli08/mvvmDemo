@@ -10,6 +10,8 @@
 #import "MainTableViewCell.h"
 #import "HomepageRowViewModel.h"
 #import "SecondViewController.h"
+#import "UIPageContainerViewController.h"
+
 
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
@@ -24,6 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+
     [self setupTabelView];
 }
 
@@ -32,11 +35,23 @@
     [self bindViewModel];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    
+}
+
 - (void)setupTabelView {
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
     
     [self.mainTableView registerNib:[MainTableViewCell cellNib] forCellReuseIdentifier:[MainTableViewCell cellReuseIdentifier]];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    
+    [super viewDidDisappear:animated];
+    
 }
 
 - (void)bindViewModel {
@@ -78,9 +93,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    SecondViewController *vc = [[SecondViewController alloc] init];
+    if (indexPath.section == 0) {
+        SecondViewController *testLoadVC = [[SecondViewController alloc] init];
+        [self.navigationController pushViewController:testLoadVC animated:YES];
+    } else {
+        UIPageContainerViewController *vc = [[UIPageContainerViewController alloc] init];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
