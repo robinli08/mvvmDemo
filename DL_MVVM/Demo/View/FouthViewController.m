@@ -7,8 +7,13 @@
 //
 
 #import "FouthViewController.h"
+#import "HXTabItem.h"
+#import "HXTabView.h"
+#import "UIView+HXUtility.h"
 
-@interface FouthViewController ()
+@interface FouthViewController () <HXTabViewDelelgate>
+
+@property (nonatomic, strong) HXTabView *tabView;
 
 @end
 
@@ -16,12 +21,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
+    HXTabItem *rankItem = [HXTabItem createUsualItemWithImageEnabled:nil imageDisabled:[UIImage imageNamed:@"allFund"]];
+    rankItem.titleString = @"全部基金";
+    HXTabItem *categoryItem = [HXTabItem createUsualItemWithImageEnabled:nil imageDisabled:[UIImage imageNamed:@"hotTopic"]];
+    categoryItem.titleString = @"热门主题";
+    HXTabItem *infoItem = [HXTabItem createUsualItemWithImageEnabled:nil imageDisabled:[UIImage imageNamed:@"customize"]];
+    infoItem.titleString = @"自选基金";
+    
+    self.tabView = [[HXTabView alloc] initWithFrame:CGRectMake(0, 64, 375, 85) andTabItems:@[rankItem, categoryItem, infoItem]];
+    self.tabView.darkensBackgroundForEnabledTabs = NO;
+    self.tabView.horizontalInsets = HorizontalEdgeInsetsMake(0, 0);
+    self.tabView.titlesFontColor = [UIColor colorWithRed:51/255.f green:51/255.f blue:51/255.f alpha:1.f];
+    self.tabView.delegate = self;
+    self.tabView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tabView];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -34,14 +54,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)tabView:(HXTabView *)tabView tabBecameEnabledAtIndex:(int)index tab:(HXTabItem *)tabItem {
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
+//Called Only for unexcludable items. (TabTypeUnexcludable)
+- (void)tabView:(HXTabView *)tabView tabBecameDisabledAtIndex:(int)index tab:(HXTabItem *)tabItem {
+    
+    
+}
+
 
 @end

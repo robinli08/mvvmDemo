@@ -193,6 +193,19 @@
         }
     }
     
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSArray *files = [[NSFileManager defaultManager] subpathsAtPath:cachePath];
+    NSLog(@"文件数 ：%ld",[files count]);
+    for (NSString *p in files)
+    {
+        NSError *error;
+        NSString *path = [cachePath stringByAppendingString:[NSString stringWithFormat:@"/%@",p]];
+        if([[NSFileManager defaultManager] fileExistsAtPath:path])
+        {
+            [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
+        }
+    }
+    
     [[self pageViewController] setDataSource:self];
     [[self pageViewController] setDelegate:self];
     

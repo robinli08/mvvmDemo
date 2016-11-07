@@ -13,6 +13,7 @@
 #import "SixthViewController.h"
 #import "DLRainbowSegmentControl.h"
 #import "ViewController.h"
+#import "FouthViewController.h"
 
 @interface UIPageContainerViewController () <UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 
