@@ -11,6 +11,7 @@
 #import "HomepageRowViewModel.h"
 #import "SecondViewController.h"
 #import "UIPageContainerViewController.h"
+#import "UIResponder+FirstResponder.h"
 
 
 
@@ -46,12 +47,28 @@
     self.mainTableView.dataSource = self;
     
     [self.mainTableView registerNib:[MainTableViewCell cellNib] forCellReuseIdentifier:[MainTableViewCell cellReuseIdentifier]];
+    　　NSArray *urls = @[@"fdaljfsdal;fjsd",@"fjdlsajf;sla",@"fdjlfjdsafjs"];
+    for (NSURL *url in urls) {
+        @autoreleasepool {
+            NSError *error;
+            NSString *fileContents = [NSString stringWithContentsOfURL:url
+                                                              encoding:NSUTF8StringEncoding error:&error];
+        }
+    }
+    
+    
+
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     
     [super viewDidDisappear:animated];
     
+}
+
+- (void)didReceiveMemoryWarning {
+    
+    [super didReceiveMemoryWarning];
 }
 
 - (void)bindViewModel {
@@ -92,7 +109,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+     
     if (indexPath.section == 0) {
         SecondViewController *testLoadVC = [[SecondViewController alloc] init];
         [self.navigationController pushViewController:testLoadVC animated:YES];

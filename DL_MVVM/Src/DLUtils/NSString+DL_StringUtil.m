@@ -66,5 +66,27 @@
     return resultSize;
 }
 
+- (CGSize)dl_sizeWithAttributes:(NSDictionary *)attributes constrainedToSize:(CGSize)size {
+    
+    CGSize resultSize;
+    if ([self respondsToSelector:@selector(boundingRectWithSize:options:context:)]) {
+        NSMethodSignature *sinature = [[self class] instanceMethodSignatureForSelector:@selector(boundingRectWithSize:options:context:)];
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sinature];
+        [invocation setTarget:self];
+        [invocation setSelector:@selector(boundingRectWithSize:options:context:)];
+        NSDictionary *attributesDic = attributes;
+        NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin;
+        NSStringDrawingContext *context;
+        [invocation setArgument:&size atIndex:2];
+        [invocation setArgument:&options atIndex:3];
+        [invocation setArgument:&attributesDic atIndex:4];
+        [invocation setArgument:&context atIndex:5];
+        [invocation invoke];
+        CGRect rect;
+        [invocation getReturnValue:&rect];
+        resultSize = rect.size;
+    }
+    return resultSize;
+}
 
 @end

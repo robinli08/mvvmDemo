@@ -13,5 +13,5 @@
 
 - (CGSize)dl_sizeWithFont:(UIFont *)font;
 - (CGSize)dl_sizewithfont:(UIFont *)font constrainedToSize:(CGSize)size;
-
+- (CGSize)dl_sizeWithAttributes:(NSDictionary *)attributes constrainedToSize:(CGSize)size;
 @end
