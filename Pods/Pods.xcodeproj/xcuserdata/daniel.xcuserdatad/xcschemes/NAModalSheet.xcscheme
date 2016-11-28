@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C29A29CD7D0582000B6D42A588C5C8B8'
-               BlueprintName = 'ReactiveCocoa'
+               BlueprintIdentifier = '40D128C5E265D04FE79DAB58B54DB680'
+               BlueprintName = 'NAModalSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libReactiveCocoa.a'>
+               BuildableName = 'libNAModalSheet.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

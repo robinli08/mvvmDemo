@@ -61,14 +61,14 @@
 - (void)reloadPageViewData {
     self.viewControllersArray = [NSMutableArray array];
     
-    ViewController *sixthVC = [[ViewController alloc] init];
-    [self.viewControllersArray addObject:sixthVC];
     ForthViewController *forthVC = [[ForthViewController alloc] init];
     [self.viewControllersArray addObject:forthVC];
     FifthViewController *fifVC = [[FifthViewController alloc] init];
     [self.viewControllersArray addObject:fifVC];
     ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
     [self.viewControllersArray addObject:thirdVC];
+    SixthViewController *sixthVC = [[SixthViewController alloc] init];
+    [self.viewControllersArray addObject:sixthVC];
     
     self.pageViewController.view.frame = self.view.frame;
     self.pageViewController.view.backgroundColor = [UIColor whiteColor];

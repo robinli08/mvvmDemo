@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DL_MVVM/Demo/View/ViewController.m"
-            timestampString = "500376475.912334"
+            filePath = "DL_MVVM/Demo/View/SixthViewController.m"
+            timestampString = "500883008.936989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-bindViewModel"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DL_MVVM/Demo/View/ViewController.m"
-            timestampString = "500376550.580949"
+            filePath = "DL_MVVM/Demo/View/SixthViewController.m"
+            timestampString = "500883008.936989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-tableView:heightForFooterInSection:"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-bindViewModel"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

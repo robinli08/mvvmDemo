@@ -7,7 +7,7 @@
 //
 
 #import "BKBackgroundTimer.h"
-#import <libkern/OSAtomic.h>
+#import <pthread.h>
 
 typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
     BKBackgroundTimerStateReady,
@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
 
 @interface BKBackgroundTimer ()
 
-@property (nonatomic, assign) OSSpinLock lock;
+@property (nonatomic, assign) pthread_mutex_t lock;
 @property (nonatomic, strong) dispatch_queue_t timerFireQueue;
 @property (nonatomic, strong) dispatch_source_t timerSource;
 @property (nonatomic, assign) BKBackgroundTimerState timerState;
@@ -36,8 +36,7 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
         _interval = interval;
         _repeats = repeats;
         _fireBlock = fireBlock;
-        
-        _lock = OS_SPINLOCK_INIT;
+        pthread_mutex_init(&_lock, NULL);
         _timerFireQueue = dispatch_queue_create("BKBackgroundTimerFire", DISPATCH_QUEUE_SERIAL);
         self.timerState = BKBackgroundTimerStateReady;
     }
@@ -62,7 +61,7 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
 }
 
 - (BOOL)start {
-    OSSpinLockLock(&_lock);
+    pthread_mutex_lock(&_lock);
     BOOL success = YES;
     if (self.timerState != BKBackgroundTimerStateReady && self.timerState != BKBackgroundTimerStateStopped) {
         success = NO;
@@ -71,13 +70,13 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
         dispatch_resume(self.timerSource);
         self.timerState = BKBackgroundTimerStateRunning;
     }
-    OSSpinLockUnlock(&_lock);
+    pthread_mutex_unlock(&_lock);
     
     return success;
 }
 
 - (BOOL)pause {
-    OSSpinLockLock(&_lock);
+    pthread_mutex_lock(&_lock);
     
     BOOL success = YES;
     if (self.timerState != BKBackgroundTimerStateRunning) {
@@ -86,13 +85,13 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
         dispatch_suspend(self.timerSource);
         self.timerState = BKBackgroundTimerStatePaused;
     }
-    OSSpinLockUnlock(&_lock);
+    pthread_mutex_unlock(&_lock);
     
     return success;
 }
 
 - (BOOL)stop {
-    OSSpinLockLock(&_lock);
+    pthread_mutex_lock(&_lock);
     BOOL success = YES;
     
     switch (self.timerState) {
@@ -111,13 +110,13 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
             break;
     }
     
-    OSSpinLockUnlock(&_lock);
+    pthread_mutex_unlock(&_lock);
     
     return success;
 }
 
 - (BOOL)resume {
-    OSSpinLockLock(&_lock);
+    pthread_mutex_lock(&_lock);
     BOOL success = YES;
     if (self.timerState != BKBackgroundTimerStatePaused) {
         success = NO;
@@ -125,7 +124,7 @@ typedef NS_ENUM(NSInteger,BKBackgroundTimerState) {
         dispatch_resume(self.timerSource);
         self.timerState = BKBackgroundTimerStateRunning;
     }
-    OSSpinLockUnlock(&_lock);
+    pthread_mutex_unlock(&_lock);
     return success;
 }
 

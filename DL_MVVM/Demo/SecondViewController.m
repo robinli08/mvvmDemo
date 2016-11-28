@@ -18,14 +18,17 @@
 #import "ForthViewController.h"
 #import "FifthViewController.h"
 #import "SixthViewController.h"
+#import "DLOptionsView.h"
 
+@interface SecondViewController ()
 
-@interface SecondViewController () <UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@property (weak, nonatomic) IBOutlet DLOptionsView *optionsView;
 
-@property (weak, nonatomic) IBOutlet DLAutoScrollLabel *scrollLabelView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) DLRainbowSegmentControl *seg;
 @property (nonatomic, strong) UIPageViewController *pageViewController;
+@property (nonatomic, strong) UIImageView *headerImageView;
+
 @end
 
 @implementation SecondViewController
@@ -33,246 +36,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.headerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 80, 80)];
+    self.headerImageView.backgroundColor = [UIColor grayColor];
+//    [self.view addSubview:self.headerImageView];
     
-//    RACMulticastConnection *connection = [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//        [[RACScheduler mainThreadScheduler] afterDelay:1 schedule:^{
-//            [subscriber sendNext:@1];
-//        }];
-//        
-//        [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
-//            [subscriber sendNext:@2];
-//        }];
-//        
-//        [[RACScheduler mainThreadScheduler] afterDelay:3 schedule:^{
-//            [subscriber sendNext:@3];
-//        }];
-//        
-//        [[RACScheduler mainThreadScheduler] afterDelay:4 schedule:^{
-//            [subscriber sendCompleted];
-//        }];
-//        return nil;
-//    }] publish];
-//    [connection connect];
-//    RACSignal *signal = connection.signal;
-//    
-//    NSLog(@"Signal was created.");
-//    [[RACScheduler mainThreadScheduler] afterDelay:1.1 schedule:^{
-//        [signal subscribeNext:^(id x) {
-//            NSLog(@"Subscriber 1 recveive: %@", x);
-//        }];
-//    }];
-//    
-//    [[RACScheduler mainThreadScheduler] afterDelay:2.1 schedule:^{
-//        [signal subscribeNext:^(id x) {
-//            NSLog(@"Subscriber 2 recveive: %@", x);
-//        }];
-//    }];
+    float viewWidth = 80;
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    path.lineWidth = 2;
     
+    [[UIColor whiteColor] setStroke];
     
-//    NSString *str = @"我是label1234567890";
-//    
-////    CGSize size = [str dl_sizeWithFont:[UIFont systemFontOfSize:12.f]];
-//    CGSize textSize = [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16.0f]}];
-//    CGFloat textWidth = ceilf(textSize.width);
-//    
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, textWidth, textSize.height)];
-//    label.font = [UIFont systemFontOfSize:16.0f];
-// //   label.layer.borderWidth = 0.5f;
-//   // label.layer.borderColor = [UIColor blueColor].CGColor;
-//    label.text = str;
-//    [self.view addSubview:label];
-//    
-//    
-//    DLTagView *tagLable = [[DLTagView alloc] initWithFrame:CGRectMake(100, 200, 50, 40)];
-//    
-//    tagLable.textColor = [UIColor redColor];
-//    
-//    tagLable.textFont = [UIFont systemFontOfSize:16.f];
-//    tagLable.edgeInsets = UIEdgeInsetsMake(5, 5, 5, 20);
-//    
-////    tagLable.layer.borderWidth = 0.5f;
-//    tagLable.layer.borderColor = [UIColor blueColor].CGColor;
-//    
-//    tagLable.text = str;
-//    
-//    [self.view addSubview:tagLable];
-//    
-//    DLAutoScrollLabel *scrollLabel = [[DLAutoScrollLabel alloc] initWithFrame:CGRectMake(100, 400, 115, 40)];
-//    
-//    scrollLabel.text = str;
-//    
-//    NSLog(@"%@",scrollLabel.text);
-//
-//    self.scrollLabelView.text = str;
-//    
-//    UITapGestureRecognizer *tapReg = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture)];
-//    [self.view addGestureRecognizer:tapReg];
-//    
-//    [self.view addSubview:self.scrollLabelView];
-//    [self.view addSubview:scrollLabel];
-//    
-//    UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:@[@"热门",@"高端",@"基金",@"定期"]];
-//    seg.frame = CGRectMake(0, 100, 200, 40);
-//    [self.view addSubview:seg];
+    [path moveToPoint:CGPointMake((sin(M_1_PI / 180 * 60)) * (viewWidth / 2), (viewWidth / 4))];
+    
+    [path addLineToPoint:CGPointMake((viewWidth / 2), 0)];
+    
+    [path addLineToPoint:CGPointMake(viewWidth - ((sin(M_1_PI / 180 * 60)) * (viewWidth / 2)), (viewWidth / 4))];
+    
+    [path addLineToPoint:CGPointMake(viewWidth - ((sin(M_1_PI / 180 * 60)) * (viewWidth / 2)), (viewWidth / 2) + (viewWidth / 4))];
+    
+    [path addLineToPoint:CGPointMake((viewWidth / 2), viewWidth)];
+    
+    [path addLineToPoint:CGPointMake((sin(M_1_PI / 180 * 60)) * (viewWidth / 2), (viewWidth / 2) + (viewWidth / 4))];
+    
+    [path closePath];
+    
+    CAShapeLayer *shapLayer = [CAShapeLayer layer];
+    shapLayer.lineWidth = 2;
+    shapLayer.strokeColor = [UIColor whiteColor].CGColor;
+    shapLayer.path = path.CGPath;
+    
+//    self.headerImageView.layer.mask = shapLayer;
     
     
     
-//            _segmentControl = [[TTTSegmentControl alloc]
-//                               initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kSegmentControlHeight)];
-//            self.tableview.frame = CGRectMake(0, _segmentControl.bottom, self.view.frame.size.width,
-//                                              self.view.frame.size.height - self.segmentControl.bottom);
-//            _segmentControl.showIndicator = YES;
-//            _segmentControl.backgroundColor = theUIStyle.itemViewColor;
-//            _segmentControl.selectedColor = theUIStyle.c0;
-//            _segmentControl.titleColor = theUIStyle.c2_a80;
-//            _segmentControl.font = theUIStyle.f3;
-//            _segmentControl.selectedFont = theUIStyle.f3;
-//            [_segmentControl addSegmentWithTitles:@[@"我要退货", @"我要退款"]];
-//            //绑定segment绑定事件
-//            [_segmentControl addTarget:self
-//                                action:@selector(segmentValueChanged:)
-//                      forControlEvents:UIControlEventValueChanged]
-
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 400, 1000, 500)];
+    label.numberOfLines = 0;//设置段落paragraphStyle，numberOfLines必须为0
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.backgroundColor = [UIColor redColor];
+    label.textAlignment = NSTextAlignmentCenter;
     
+    NSString *str1 = @"全球开发者大会（WWDC）";
+    NSString *str2 = @"美国在旧金山芳草地";
+    NSString *str5 = @"太平洋时间";
+    NSString *str3 = @"开始：2016-03-10";
+    NSString *str4 = @"结束：2016-03-20";
+    NSString *string = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@",str1,str2,str5,str3,str4];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = 20.0;
+    NSDictionary *attrsDictionary1 = @{NSFontAttributeName:[UIFont systemFontOfSize:30],
+                                       NSParagraphStyleAttributeName:paragraphStyle};
+    NSDictionary *attrsDictionary2 = @{NSParagraphStyleAttributeName:paragraphStyle};
+    //给str1添加属性，字体加粗，并且设置段落间隙
+    [attributedString addAttributes:attrsDictionary1 range:NSMakeRange(0, str1.length)];
+    //给str2设置段落间隙
+    [attributedString addAttributes:attrsDictionary2 range:NSMakeRange(str1.length, str2.length)];
+    //attributedString如果还有别的样式需要添加可以这样依次加属性
+    label.attributedText = attributedString;
+    [self.view addSubview:label];
     
-    DLRainbowSegmentControl *rainSeg = [[DLRainbowSegmentControl alloc] initWithTitles:@[@"热门",@"高端",@"基金",@"定期"]];
-    rainSeg.frame = CGRectMake(0, 0, 200, 40);
-    rainSeg.backgroundColor = [UIColor grayColor];
-    self.seg = rainSeg;
-    self.navigationItem.titleView = self.seg;
-    
-    
-    
-//    CGFloat viewWidth = self.view.frame.size.width;
-//    CGFloat viewHeight = self.view.frame.size.height;
-//    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, viewHeight)];
-//    self.scrollView.backgroundColor = [UIColor colorWithRed:0.7 green:0.7 blue:0.7 alpha:1];
-//    self.scrollView.pagingEnabled = YES;
-//    self.scrollView.showsHorizontalScrollIndicator = NO;
-//    self.scrollView.showsVerticalScrollIndicator = NO;
-//    self.scrollView.contentSize = CGSizeMake(viewWidth * 4, 1);  //这里不能设置为0
-//    self.scrollView.delegate = self;
-//    [self.scrollView scrollRectToVisible:CGRectMake(0, 0, viewWidth, viewHeight) animated:NO];
-//    [self.view addSubview:self.scrollView];
-//    
-//    //添加视图控制器到scrollView
-//    
-//    ThirdViewController *third = [[ThirdViewController alloc] init];
-//    ForthViewController *forth = [[ForthViewController alloc] init];
-//    FifthViewController *fifth = [[FifthViewController alloc] init];
-//    SixthViewController *sixth = [[SixthViewController alloc] init];
-//
-//    [self addChildViewController:third];
-//    [self addChildViewController:forth];
-//    [self addChildViewController:fifth];
-//    [self addChildViewController:sixth];
-//    
-//    NSArray *arrView = @[third,forth,fifth,sixth];
-//    for (int i = 0; i<arrView.count; i++) {
-//        UIViewController *temp = arrView[i];
-//        temp.view.frame = CGRectMake(i *viewWidth, 0, viewWidth, viewHeight);
-//        [self.scrollView addSubview:temp.view];
-//    }
-//
-//    @weakify(self);
-//    [self.seg setIndexChangedBloc:^(NSInteger index) {
-//        @strongify(self);
-//        CGFloat width =  self.view.frame.size.width;
-//        CGFloat height = self.view.frame.size.height;
-//        [self.scrollView scrollRectToVisible:CGRectMake( width* index, 0, width, height) animated:YES];
-//    }];
-    
-    [self setPageViewController:[[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
-                                                                navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
-                                                                              options:nil]];
-    
-    for (UIView *view in [[[self pageViewController] view] subviews]) {
-        if ([view isKindOfClass:[UIScrollView class]]) {
-            [(UIScrollView *)view setCanCancelContentTouches:YES];
-            [(UIScrollView *)view setDelaysContentTouches:NO];
-        }
-    }
-    
-    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSArray *files = [[NSFileManager defaultManager] subpathsAtPath:cachePath];
-    NSLog(@"文件数 ：%ld",[files count]);
-    for (NSString *p in files)
-    {
-        NSError *error;
-        NSString *path = [cachePath stringByAppendingString:[NSString stringWithFormat:@"/%@",p]];
-        if([[NSFileManager defaultManager] fileExistsAtPath:path])
-        {
-            [[NSFileManager defaultManager] removeItemAtPath:path error:&error];
-        }
-    }
-    
-    [[self pageViewController] setDataSource:self];
-    [[self pageViewController] setDelegate:self];
-    
-    [self addChildViewController:self.pageViewController];
-    [self.view addSubview:self.pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
-    
+    self.optionsView.backgroundColor = [UIColor redColor];
+    self.optionsView.options = @[@"我的积分",@"现金宝",@"我的余额",@"我的定期",@"我的积分",@"现金宝",@"我的余额",@"我的定期",@"我的积分",@"现金宝",@"我的余额",@"我的定期",@"我的积分",@"现金宝",@"我的余额",@"我的定期"];
+    [self.optionsView reloadOptionButtons];
 }
 
-- (void)tapGesture {
-    
-}
-
-- (IBAction)popButtonAction:(id)sender {
-    
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[ThirdViewController alloc] init]];
-//    
-//    nav.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
-    
-    UIViewController *vc = [UIViewController new];
-    
-    vc.view.frame = CGRectMake(0, 400, self.view.bounds.size.width, 400);
-    
-    [self presentPopupViewController:vc
-                            animated:YES
-                     useBlurForPopup:YES
-                        popDirection:DLPopupDirectionBottomToTop
-                          completion:^{
-                              
-                          }];
-    
-}
-
-#pragma mark ------------------ uipageviewcontrollerdatasource --------------------
-
-//- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-//    
-//    
-//}
-//
-//- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-//    
-//}
-
-
-#pragma mark ------------------ uipageviwecontrollerDelegate --------------------
-
-- (void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> *)pendingViewControllers {
-    
-}
-
-
-- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed {
-    
-    
-}
-
-
-- (UIInterfaceOrientationMask)pageViewControllerSupportedInterfaceOrientations:(UIPageViewController *)pageViewController {
-    
-    return UIInterfaceOrientationMaskPortrait;
-    
-}
-- (UIInterfaceOrientation)pageViewControllerPreferredInterfaceOrientationForPresentation:(UIPageViewController *)pageViewController {
-    
-    return UIInterfaceOrientationPortrait;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
